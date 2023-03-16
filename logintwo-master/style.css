@@ -1,0 +1,238 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*公共CSS*/
+.box {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(29, 67, 89);
+}
+.box .content .login-wrapper h1 {
+  /* text-align属性指定元素文本的水平对齐方式。 */
+  text-align: center;
+}
+.box .content .login-wrapper .login-form .form-item {
+  /* margin: 上边距 右边距 下边距 左边距 （顺时针）*/
+  /* margin: 上下边距 左右边距 */
+  /* margin: 四个边距 */
+  margin: 20px 0;
+}
+.box .content .login-wrapper .login-form .form-item span {
+  /* display 属性设置元素是否被视为块或者内联元素以及用于子元素的布局，例如流式布局、网格布局或弹性布局。 */
+  display: block;
+  margin: 5px 20px;
+  /* font-weight 属性设置文本的粗细 */
+  font-weight: 100;
+}
+.box .content .login-wrapper .login-form .form-item .input-item {
+  width: 100%;
+  /* border-radius 允许你设置元素的外边框圆角。 */
+  border-radius: 40px;
+  /* padding: 上内边距 右内边距 下内边距 左内边距 （顺时针）*/
+  /* padding: 上下内边距 左右内边距 */
+  /* padding: 四个内边距 */
+  padding: 20px;
+  /* box-sizing 属性定义如何计算一个元素的总宽度和总高度，主要设置是否需要加上内边距(padding)和边框等。 */
+  /* content-box：默认值 */
+  /* border-box：设置的边框和内边距的值是包含在 width 内的 */
+  /* width(宽度) + padding(内边距) + border(边框) = 元素实际宽度
+    height(高度) + padding(内边距) + border(边框) = 元素实际高度 */
+  box-sizing: border-box;
+  /* font-size 属性用于设置字体大小 */
+  font-size: 20px;
+  font-weight: 200;
+}
+/* :focus 当前元素聚焦的样式 */
+.box .content .login-wrapper .login-form .form-item .input-item:focus {
+  /* CSS outline:none;表示使outline属性无效，使绘制于元素周围的一条线无效。
+    outline属性包括：outline-color、outline-style、outline-width：
+    outline-color ：设置元素轮廓的颜色，其取值与border-color类似。只有当outline-style不为none时才有效。默认为transparent。
+    outline-style ：设置元素轮廓的格式，其取值与border-style类似，但没有hidden值。默认为none，无轮廓。
+    outline-width：设置元素轮廓的宽度，其取值与border-width类似。只有当outline-style不为none时才有效。 */
+  outline: none;
+}
+.box .content .login-wrapper .login-form .login-btn {
+  width: 100%;
+  border-radius: 40px;
+  color: #fff;
+  border: 0;
+  font-weight: 100;
+  margin-top: 10px;
+  /* cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 */
+  /* 常用：pointer光标呈现为指示链接的指针（一只手） */
+  cursor: pointer;
+}
+.box .content .login-wrapper .divider {
+  width: 100%;
+  margin: 20px 0;
+  /* text-align属性指定元素文本的水平对齐方式。 */
+  text-align: center;
+  display: flex;
+  /* align-items 属性定义flex子项在flex容器的当前行的侧轴（垂直方向、纵轴）方向上的对齐方式。 */
+  /* stretch: 默认值。元素被拉伸以适应容器。 */
+  /* center: 元素位于容器的中心。 */
+  /* flex-start: 元素位于容器的开头。 */
+  /* flex-end: 元素位于容器的结尾。 */
+  /* baseline: 元素位于容器的基线上。 */
+  align-items: center;
+  /* justify-content 用于设置或检索弹性盒子元素在主轴（水平方向横轴）方向上的对齐方式。 */
+  justify-content: center;
+}
+/* :nth-child(1)表示要选择父元素中索引为该数值的子元素 */
+.box .content .login-wrapper .divider span:nth-child(1) {
+  /* flex 属性用于设置或检索弹性盒模型对象的子元素如何分配空间。 */
+  flex: 1;
+}
+.box .content .login-wrapper .divider span:nth-child(3) {
+  flex: 1;
+}
+.box .content .login-wrapper .divider .line {
+  /* 行内块元素 */
+  display: inline-block;
+  max-width: 30%;
+  width: 30%;
+}
+.box .content .login-wrapper .divider .divider-text {
+  /* vertical-align 属性设置一个元素的垂直对齐方式。 */
+  /* middle: 把此元素放置在父元素的中部。 */
+  vertical-align: middle;
+  margin: 0px 20px;
+  /* 行高 */
+  line-height: 0px;
+  display: inline-block;
+  width: 100px;
+}
+.box .content .login-wrapper .other-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .content .login-wrapper .other-login-item {
+  /* 边框: 宽度 样式 颜色 */
+  border: 1px solid rgb(214, 222, 228);
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*一般大于手机的尺寸CSS*/
+/* @media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。
+  当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。 */
+/* 当屏幕最小宽度小于767px时改变样式 */
+@media (min-width: 767px) {
+  .box {
+    background-color: rgb(29, 67, 89);
+  }
+  .box .content {
+    width: 85vw;
+    height: 90vh;
+    background: url("./asset/login_two.jpg") no-repeat;
+    background-size: 90% 100%;
+    /* position属性指定一个元素（静态的，相对的，绝对或固定）的定位方法的类型。 */
+    /* absolute: 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。 */
+    /* fixed: 生成固定定位的元素，相对于浏览器窗口进行定位。 */
+    /* relative: 生成相对定位的元素，相对于其正常位置进行定位。 */
+    /* sticky: 粘性定位，该定位基于用户滚动的位置。 */
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    left: 50%;
+    /* transform属性应用于元素的2D或3D转换。这个属性允许你将元素旋转，缩放，移动，倾斜等。 */
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: #fff;
+  }
+  .box .content .login-wrapper {
+    width: 25vw;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .box .content .login-wrapper h1 {
+    text-align: center;
+    font-size: 45px;
+    color: rgb(81, 100, 115);
+    margin-bottom: 40px;
+  }
+  .box .content .login-wrapper .login-form {
+    margin: 10px 0;
+  }
+  .box .content .login-wrapper .login-form .form-item span {
+    color: rgb(81, 100, 115);
+  }
+  .box .content .login-wrapper .login-form .form-item .input-item {
+    height: 60px;
+    border: 1px solid rgb(214, 222, 228);
+  }
+  .box .content .login-wrapper .login-form .login-btn {
+    height: 50px;
+    background-color: rgb(59, 72, 89);
+    font-size: 20px;
+  }
+  .box .content .login-wrapper .divider .line {
+    border-bottom: 1px solid rgb(214, 222, 228);
+  }
+  .box .content .login-wrapper .other-login-item {
+    border-radius: 20px;
+  }
+  .box .content .login-wrapper .other-login-item img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/*手机端CSS*/
+@media (max-width: 768px) {
+  .box .content {
+    width: 100vw;
+    height: 100vh;
+    background: url("./asset/login_bg_phone.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .box .content .login-wrapper {
+    width: 70%;
+    height: 60%;
+    padding-top: 15%;
+  }
+  .box .content .login-wrapper h1 {
+    font-size: 30px;
+    color: #fff;
+  }
+  .box .content .login-wrapper .login-form .form-item {
+    margin: 10px 0;
+  }
+  .box .content .login-wrapper .login-form .form-item span {
+    color: rgb(113, 129, 141);
+  }
+  .box .content .login-wrapper .login-form .form-item .input-item {
+    height: 30px;
+    border: 1px solid rgb(113, 129, 141);
+    background-color: transparent;
+    color: #fff;
+  }
+  .box .content .login-wrapper .login-form .login-btn {
+    height: 40px;
+    background-color: rgb(235, 95, 93);
+    font-size: 16px;
+  }
+  .box .content .login-wrapper .divider .line {
+    border-bottom: 1px solid #fff;
+  }
+  .box .content .login-wrapper .divider .divider-text {
+    color: #fff;
+  }
+  .box .content .login-wrapper .other-login-item {
+    border-radius: 15px;
+  }
+  .box .content .login-wrapper .other-login-item img {
+    width: 35px;
+    height: 35px;
+  }
+}/*# sourceMappingURL=style.css.map */
