@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+#app,.container{
+    height: 100%;
+    width: 100%;
+}
+
+
+// 全局修改样式
+.ant-form-item-label>label {
+    color: #666 !important;
+}
+.ant-modal-body{
+        max-height: 720px;
+        overflow: auto;
+}
+.ant-table-thead > tr > th{
+    color: #333 !important;
+    font-weight: 600 !important;
+    font-size: 14px;
+}
+// .ant-table-tbody>tr:hover>td{
+//     background: #f5f7fa !important;
+// }
+.ant-btn[disabled]{
+    color: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid #ccc !important;
+    opacity: 0.6;
+    padding: 0 16px;
+}
+.ant-modal-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 175px;
+}
+.ant-modal-header{
+    background-color: #FEFEFE !important;
+    height: 51px;
+    padding: 16px 16px !important;
+    border-bottom: 0px solid #e8e8e8 !important;
+}
+.ant-modal-footer {
+    height: 72px;
+    padding: 16px 16px !important;
+    border-top: 0px solid #e8e8e8 !important;
+}
+.ant-modal-close-x {
+    // font-size: 12px !important;
+}
+// .ant-table-row:hover {
+//     background-color: #f5f7fa !important;
+// }
+
+.ant-message-notice-content {
+    // background: aquamarine;
+}
+.ant-form-item-label {
+    margin: 0 12px 0 2px !important;
+}
+.ant-form-item-label > label::after {
+    content: '' !important;
+    margin: 0 0px 0 2px !important;
+}
+.ant-form-item input {
+    font-size: 14px;
+}
+.ant-form-item .ant-select {
+   font-size: 14px;
+}
+.ant-form-item textarea {
+    font-size: 14px;
+}
+.ant-tag {
+    opacity: 0.9 !important;
+}
+.ant-tooltip {
+    max-width: 256px;
+}
+// .ant-message {
+//     color: rgba(0, 0, 0, 0) !important;
+//     margin-top: 65px !important;
+// }
+// .ant-message-notice-content {
+//     padding: 0 0 !important;
+//     background-color: rgba(255, 255, 255, 0.2) !important;
+// }
+// .ant-message-success {
+//     padding: 10px 16px !important;
+//     background: rgba(80, 205, 80, 0.20) !important;
+//     border: 2px solid rgba(80, 205, 80, 1.00) !important;
+//     color: rgba(0, 0, 0, 1.00) !important;
+//     border-radius: 4px !important;
+// }
+// .ant-message-error {
+//     padding: 10px 16px !important;
+//     background: rgba(249, 30, 30, 0.20) !important;
+//     border: 2px solid rgba(249, 30, 30, 1.00) !important;
+//     color: rgba(0, 0, 0, 1.00) !important;
+//     border-radius: 4px !important;
+// }
+.ant-modal-footer button {
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+.ant-tooltip {
+    max-width: 256px;
+}
+.ant-menu-submenu > .ant-menu {
+    background-color: #FAFAFA !important;
+}

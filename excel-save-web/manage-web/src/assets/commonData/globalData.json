@@ -1,0 +1,1337 @@
+{
+  "examineList": [
+    {
+      "key": "1",
+      "value": "审核完成"
+    },
+    {
+      "key": "2",
+      "value": "审核中"
+    },
+    {
+      "key": "3",
+      "value": "审核失败"
+    }
+  ],
+  "examineTemplateList": [
+    {
+      "key": "0",
+      "value": "正常"
+    },
+    {
+      "key": "1",
+      "value": "确认违规"
+    },
+    {
+      "key": "2",
+      "value": "疑似违规"
+    }
+  ],
+  "violateList": [
+    {
+      "key": "1",
+      "value": "涉黄"
+    },
+    {
+      "key": "2",
+      "value": "暴恐"
+    },
+    {
+      "key": "3",
+      "value": "涉政"
+    },
+    {
+      "key": "4",
+      "value": "违禁"
+    },
+    {
+      "key": "5",
+      "value": "广告"
+    }
+  ],
+  "subType": [
+    {
+      "key": "1",
+      "parameter": "behavior",
+      "value": "性行为、露点及嫖娼"
+    },
+    {
+      "key": "2",
+      "parameter": "sm",
+      "value": "SM"
+    },
+    {
+      "key": "3",
+      "parameter": "privacy",
+      "value": "非法获取私人信息"
+    },
+    {
+      "key": "4",
+      "parameter": "products",
+      "value": "性用品及性玩具"
+    },
+    {
+      "key": "5",
+      "parameter": "art",
+      "value": "艺术品"
+    },
+    {
+      "key": "6",
+      "parameter": "children",
+      "value": "儿童"
+    },
+    {
+      "key": "7",
+      "parameter": "male",
+      "value": "男性衣着暴露"
+    },
+    {
+      "key": "8",
+      "parameter": "female",
+      "value": "女性衣着暴露"
+    },
+    {
+      "key": "9",
+      "parameter": "intimacy",
+      "value": "亲密行为"
+    },
+    {
+      "key": "10",
+      "parameter": "vulgar",
+      "value": "低俗行为"
+    },
+    {
+      "key": "11",
+      "parameter": "blood",
+      "value": "血腥"
+    },
+    {
+      "key": "12",
+      "parameter": "corpse",
+      "value": "尸体"
+    },
+    {
+      "key": "13",
+      "parameter": "murder",
+      "value": "绑架及杀人"
+    },
+    {
+      "key": "14",
+      "parameter": "explosion",
+      "value": "爆炸火灾"
+    },
+    {
+      "key": "15",
+      "parameter": "riot",
+      "value": "暴乱场面"
+    },
+    {
+      "key": "16",
+      "parameter": "weapon",
+      "value": "军事武器"
+    },
+    {
+      "key": "17",
+      "parameter": "police",
+      "value": "警察部队"
+    },
+    {
+      "key": "18",
+      "parameter": "traffic",
+      "value": "车祸"
+    },
+    {
+      "key": "19",
+      "parameter": "terrorist",
+      "value": "暴恐人物"
+    },
+    {
+      "key": "20",
+      "parameter": "terrorist_group",
+      "value": "暴恐组织"
+    },
+    {
+      "key": "21",
+      "parameter": "politician_positive",
+      "value": "涉政正面人物"
+    },
+    {
+      "key": "22",
+      "parameter": "politician_negative",
+      "value": "涉政负面人物"
+    },
+    {
+      "key": "23",
+      "parameter": "political_event_positive",
+      "value": "涉政正面事件"
+    },
+    {
+      "key": "24",
+      "parameter": "political_event_negative",
+      "value": "涉政负面事件"
+    },
+    {
+      "key": "25",
+      "parameter": "political_group_positive",
+      "value": "涉政正面组织"
+    },
+    {
+      "key": "26",
+      "parameter": "political_group_negative",
+      "value": "涉政负面组织"
+    },
+    {
+      "key": "27",
+      "parameter": "brand",
+      "value": "品牌标志"
+    },
+    {
+      "key": "28",
+      "parameter": "gamble",
+      "value": "赌博"
+    },
+    {
+      "key": "29",
+      "parameter": "forgery",
+      "value": "假冒伪劣及造假盗窃"
+    },
+    {
+      "key": "30",
+      "parameter": "trade",
+      "value": "非法交易"
+    }
+  ],
+  "template": [
+    {
+        "uuid": "1",
+        "reviewCode": null,
+        "reviewName": "涉黄",
+        "pid": "-1",
+        "confirmThreshold": null,
+        "suspectedThreshold": null,
+        "check": false,
+        "list": [
+            {
+                "uuid": "11",
+                "reviewCode": "sexual_porn",
+                "reviewName": "色情",
+                "pid": "1",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "112",
+                        "reviewCode": "sm",
+                        "reviewName": "SM",
+                        "pid": "11",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "115",
+                        "reviewCode": "children",
+                        "reviewName": "儿童",
+                        "pid": "11",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "113",
+                        "reviewCode": "products",
+                        "reviewName": "性用品及性玩具",
+                        "pid": "11",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "114",
+                        "reviewCode": "art",
+                        "reviewName": "艺术品",
+                        "pid": "11",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "111",
+                        "reviewCode": "behavior",
+                        "reviewName": "性行为及漏点招嫖",
+                        "pid": "11",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "12",
+                "reviewCode": "sexual_sexy",
+                "reviewName": "性感",
+                "pid": "1",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "121",
+                        "reviewCode": "male",
+                        "reviewName": "男性衣着暴露",
+                        "pid": "12",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "122",
+                        "reviewCode": "female",
+                        "reviewName": "女性衣着暴露",
+                        "pid": "12",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "13",
+                "reviewCode": "sexual_intimacy",
+                "reviewName": "亲密行为",
+                "pid": "1",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "131",
+                        "reviewCode": "intimacy",
+                        "reviewName": "亲密行为",
+                        "pid": "13",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+              "uuid": "14",
+              "reviewCode": "sexual_vulgar",
+              "reviewName": "低俗行为",
+              "pid": "1",
+              "confirmThreshold": null,
+              "suspectedThreshold": null,
+              "check": false,
+              "list": [
+                {
+                  "uuid": "141",
+                  "reviewCode": "vulgar",
+                  "reviewName": "低俗行为",
+                  "pid": "14",
+                  "confirmThreshold": 90,
+                  "suspectedThreshold": 60,
+                  "check": false,
+                  "list": [],
+                  "createTime": null,
+                  "updateTime": null,
+                  "whiteTextLib": null,
+                  "blackTextLib": null,
+                  "figureLib": null,
+                  "logoLib": null
+                }
+              ],
+              "createTime": null,
+              "updateTime": null,
+              "confCheck": false
+            }
+        ],
+        "createTime": null,
+        "updateTime": null
+    },
+    {
+        "uuid": "2",
+        "reviewCode": null,
+        "reviewName": "暴恐",
+        "pid": "-1",
+        "confirmThreshold": null,
+        "suspectedThreshold": null,
+        "check": false,
+        "list": [
+            {
+                "uuid": "21",
+                "reviewCode": "terrorist_group",
+                "reviewName": "暴恐组织",
+                "pid": "2",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "211",
+                        "reviewCode": "terrorist_group",
+                        "reviewName": "恐怖组织",
+                        "pid": "21",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "23",
+                "reviewCode": "terror_event",
+                "reviewName": "暴力事件",
+                "pid": "2",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "232",
+                        "reviewCode": "corpse",
+                        "reviewName": "尸体",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "231",
+                        "reviewCode": "blood",
+                        "reviewName": "血腥",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "233",
+                        "reviewCode": "murder",
+                        "reviewName": "绑架及杀人",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "234",
+                        "reviewCode": "explosion",
+                        "reviewName": "爆炸火灾",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "236",
+                        "reviewCode": "weapon",
+                        "reviewName": "军事武器",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "237",
+                        "reviewCode": "police",
+                        "reviewName": "警察部队",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "235",
+                        "reviewCode": "riot",
+                        "reviewName": "暴乱",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "238",
+                        "reviewCode": "traffic",
+                        "reviewName": "车祸",
+                        "pid": "23",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "22",
+                "reviewCode": "terrorist",
+                "reviewName": "暴恐人物",
+                "pid": "2",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "221",
+                        "reviewCode": "terrorist",
+                        "reviewName": "恐暴人物",
+                        "pid": "22",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            }
+        ],
+        "createTime": null,
+        "updateTime": null
+    },
+    {
+        "uuid": "3",
+        "reviewCode": null,
+        "reviewName": "涉政",
+        "pid": "-1",
+        "confirmThreshold": null,
+        "suspectedThreshold": null,
+        "check": false,
+        "list": [
+            {
+                "uuid": "31",
+                "reviewCode": "politician",
+                "reviewName": "涉政人物",
+                "pid": "3",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "311",
+                        "reviewCode": "politician_positive",
+                        "reviewName": "涉政正面人物",
+                        "pid": "31",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "312",
+                        "reviewCode": "politician_negative",
+                        "reviewName": "涉政负面人物",
+                        "pid": "31",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "33",
+                "reviewCode": "political_group",
+                "reviewName": "涉政组织",
+                "pid": "3",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "332",
+                        "reviewCode": "political_group_negative",
+                        "reviewName": "涉政负面组织",
+                        "pid": "33",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "331",
+                        "reviewCode": "political_group_positive",
+                        "reviewName": "涉政正面组织",
+                        "pid": "33",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "34",
+                "reviewCode": "political_sensitive",
+                "reviewName": "政治敏感",
+                "pid": "3",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "341",
+                        "reviewCode": "political_sensitive",
+                        "reviewName": "政治敏感",
+                        "pid": "34",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "32",
+                "reviewCode": "political_event",
+                "reviewName": "涉政事件",
+                "pid": "3",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "322",
+                        "reviewCode": "political_event_negative",
+                        "reviewName": "涉政负面事件",
+                        "pid": "32",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "321",
+                        "reviewCode": "political_event_positive",
+                        "reviewName": "涉政正面事件",
+                        "pid": "32",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            }
+        ],
+        "createTime": null,
+        "updateTime": null
+    },
+    {
+        "uuid": "4",
+        "reviewCode": null,
+        "reviewName": "违禁",
+        "pid": "-1",
+        "confirmThreshold": null,
+        "suspectedThreshold": null,
+        "check": false,
+        "list": [
+            {
+                "uuid": "42",
+                "reviewCode": "illegal_forgery",
+                "reviewName": "假冒伪劣及造假盗窃",
+                "pid": "4",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "421",
+                        "reviewCode": "forgery",
+                        "reviewName": "假冒伪劣及造假盗窃",
+                        "pid": "42",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "41",
+                "reviewCode": "illegal_gamble",
+                "reviewName": "赌博",
+                "pid": "4",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "411",
+                        "reviewCode": "gamble",
+                        "reviewName": "赌博",
+                        "pid": "41",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "45",
+                "reviewCode": "illegal_curse",
+                "reviewName": "辱骂",
+                "pid": "4",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "451",
+                        "reviewCode": "curse",
+                        "reviewName": "辱骂",
+                        "pid": "45",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "44",
+                "reviewCode": "illegal_privacy",
+                "reviewName": "非法获取私人信息",
+                "pid": "4",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "441",
+                        "reviewCode": "privacy",
+                        "reviewName": "非法获取私人信息",
+                        "pid": "44",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "43",
+                "reviewCode": "illegal_trade",
+                "reviewName": "非法交易",
+                "pid": "4",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "431",
+                        "reviewCode": "trade",
+                        "reviewName": "非法交易",
+                        "pid": "43",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            }
+        ],
+        "createTime": null,
+        "updateTime": null
+    },
+    {
+        "uuid": "5",
+        "reviewCode": null,
+        "reviewName": "广告",
+        "pid": "-1",
+        "confirmThreshold": null,
+        "suspectedThreshold": null,
+        "check": false,
+        "list": [
+            {
+                "uuid": "52",
+                "reviewCode": "ad_marketing",
+                "reviewName": "欺诈及营销广告",
+                "pid": "5",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "523",
+                        "reviewCode": "qrcode",
+                        "reviewName": "二维码",
+                        "pid": "52",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "524",
+                        "reviewCode": "contact",
+                        "reviewName": "联系方式（手机/座机）",
+                        "pid": "52",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "525",
+                        "reviewCode": "website",
+                        "reviewName": "网址",
+                        "pid": "52",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "522",
+                        "reviewCode": "watermark",
+                        "reviewName": "水印",
+                        "pid": "52",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    },
+                    {
+                        "uuid": "521",
+                        "reviewCode": "commercial",
+                        "reviewName": "软文推广（QQ 微信）",
+                        "pid": "52",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            },
+            {
+                "uuid": "51",
+                "reviewCode": "ad_brand",
+                "reviewName": "品牌标识",
+                "pid": "5",
+                "confirmThreshold": null,
+                "suspectedThreshold": null,
+                "check": false,
+                "list": [
+                    {
+                        "uuid": "511",
+                        "reviewCode": "brand",
+                        "reviewName": "品牌标识",
+                        "pid": "51",
+                        "confirmThreshold": 90,
+                        "suspectedThreshold": 60,
+                        "check": false,
+                        "list": [],
+                        "createTime": null,
+                        "updateTime": null,
+                        "whiteTextLib": null,
+                        "blackTextLib": null,
+                        "figureLib": null,
+                        "logoLib": null
+                    }
+                ],
+                "createTime": null,
+                "updateTime": null,
+                "confCheck": false
+            }
+        ],
+        "createTime": null,
+        "updateTime": null
+    }
+  ],
+  "labelList": [
+    {
+      "catname": "性行为",
+      "catid": "behavior"
+    },
+    {
+        "catname": "艺术色情",
+        "catid": "art"
+    },
+    {
+        "catname": "性用品",
+        "catid": "products"
+    },
+    {
+        "catname": "亲密行为",
+        "catid": "intimacy"
+    },
+    {
+        "catname": "正常图片",
+        "catid": "neutral"
+    },
+    {
+        "catname": "低俗行为",
+        "catid": "vulgar"
+    },
+    {
+        "catname": "常规艺术图片",
+        "catid": "drawings"
+    },
+    {
+        "catname": "露点",
+        "catid": "nude"
+    },
+    {
+        "catname": "脸部特写",
+        "catid": "neutral_feature"
+    },
+    {
+        "catname": "儿童色情",
+        "catid": "children"
+    },
+    {
+        "catname": "男性衣着暴露",
+        "catid": "male"
+    },
+    {
+        "catname": "单人特写（正常）",
+        "catid": "neutral_single"
+    },
+    {
+        "catname": "女性衣着暴露",
+        "catid": "female"
+    },
+    {
+        "catname": "性器官",
+        "catid": "organ"
+    },
+    {
+        "catname": "SM",
+        "catid": "sm"
+    },
+    {
+        "catname": "室内场景（正常）",
+        "catid": "neutral_work"
+    },
+    {
+      "catname": "黑夜",
+      "catid": "dark"
+    },
+    {
+        "catname": "车祸",
+        "catid": "traffic"
+    },
+    {
+        "catname": "火灾",
+        "catid": "fire"
+    },
+    {
+        "catname": "尸体",
+        "catid": "corpus"
+    },
+    {
+        "catname": "烟雾",
+        "catid": "smoke"
+    },
+    {
+        "catname": "血腥",
+        "catid": "bloody"
+    },
+    {
+        "catname": "常规",
+        "catid": "neutral"
+    },
+    {
+        "catname": "道路常规交通情况",
+        "catid": "nomal_traffic"
+    },
+    {
+        "catname": "蜡烛",
+        "catid": "candle"
+    },
+    {
+        "catname": "火烧云",
+        "catid": "sunset"
+    },
+    {
+        "catname": "正常人流",
+        "catid": "crowd"
+    },
+    {
+        "catname": "暴乱",
+        "catid": "riots"
+    },
+    {
+        "catname": "绑架及杀人",
+        "catid": "murder"
+    },
+    {
+      "catname": "非法交易",
+      "catid": "trade"
+    },
+    {
+        "catname": "假冒伪劣",
+        "catid": "forgery"
+    },
+    {
+        "catname": "常规图片",
+        "catid": "neutral"
+    },
+    {
+        "catname": "扑克",
+        "catid": "poker_chip"
+    },
+    {
+        "catname": "赌博机",
+        "catid": "slot_machine"
+    },
+    {
+        "catname": "非法获取个人隐私",
+        "catid": "privacy"
+    },
+    {
+        "catname": "麻将",
+        "catid": "mahjong"
+    },
+    {
+      "catname": "中国地图",
+      "catid": "china"
+    },
+    {
+        "catname": "旗帜",
+        "catid": "flag"
+    },
+    {
+        "catname": "警徽",
+        "catid": "policebadge"
+    },
+    {
+        "catname": "军徽",
+        "catid": "armyemblem"
+    },
+    {
+        "catname": "党徽佩戴正确",
+        "catid": "upright"
+    },
+    {
+        "catname": "党徽佩戴不正确",
+        "catid": "bias"
+    },
+    {
+        "catname": "国徽",
+        "catid": "nationalemblem"
+    },
+    {
+        "catname": "其他徽章",
+        "catid": "minsignia"
+    },
+    {
+      "catname": "装甲车",
+      "catid": "chariot"
+    },
+    {
+        "catname": "步枪",
+        "catid": "gun"
+    },
+    {
+        "catname": "刀",
+        "catid": "knife"
+    },
+    {
+        "catname": "手枪",
+        "catid": "pistol"
+    },
+    {
+        "catname": "警务人员",
+        "catid": "policeofficer"
+    },
+    {
+        "catname": "高级警务主管",
+        "catid": "seniorpoliceofficer"
+    },
+    {
+        "catname": "陆军迷彩",
+        "catid": "army"
+    },
+    {
+        "catname": "陆军正装",
+        "catid": "armysuit"
+    },
+    {
+        "catname": "海军(白色)",
+        "catid": "navy"
+    },
+    {
+        "catname": "海军陆战队",
+        "catid": "marines"
+    },
+    {
+      "catname": "Logo",
+      "catid": "foreground"
+    }
+  ]
+}

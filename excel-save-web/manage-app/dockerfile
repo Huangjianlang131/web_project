@@ -1,0 +1,12 @@
+FROM python:3.8.2
+
+ADD ./app_server /opt/dist
+
+RUN pip config set global.index-url  https://mirrors.bfsu.edu.cn/pypi/web/simple \
+	&& pip install --upgrade pip \
+	&& pip install -r /opt/dist/requirements.txt --trusted-host mirrors.bfsu.edu.cn 
+
+EXPOSE 9081
+
+WORKDIR /opt/dist
+CMD uwsgi --ini uwsgi.ini

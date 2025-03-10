@@ -1,0 +1,430 @@
+{
+  "涉黄": [
+    {
+      "id": "1",
+      "name": "色情",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 111,
+        "isSelect": true,
+        "name": "性行为及漏点招嫖",
+        "imageUrl": "/examinePic/sexy1.png",
+        "exampleWord": "黄片网",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 112,
+        "isSelect": true,
+        "name": "SM",
+        "imageUrl": "/examinePic/sexy2.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 113,
+        "isSelect": true,
+        "name": "性用品及性玩具",
+        "imageUrl": "/examinePic/sexy3.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 114,
+        "isSelect": true,
+        "name": "艺术品",
+        "imageUrl": "/examinePic/sexy4.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 115,
+        "isSelect": true,
+        "name": "儿童",
+        "imageUrl": "/examinePic/sexy5.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    },
+    {
+      "id": "2",
+      "name": "性感",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 121,
+        "isSelect": true,
+        "name": "男性衣着暴露",
+        "imageUrl": "/examinePic/sexy6.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 122,
+        "isSelect": true,
+        "name": "女性衣着暴露",
+        "imageUrl": "/examinePic/sexy7.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }, 
+    {
+      "id": "3",
+      "name": "亲密行为",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 3001,
+        "isSelect": true,
+        "name": "亲密行为",
+        "imageUrl": "/examinePic/sexy8.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }
+  ],
+  "暴恐": [
+    {
+      "id": "5",
+      "name": "暴恐组织",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 5001,
+        "isSelect": true,
+        "name": "恐怖组织",
+        "imageUrl": "/examinePic/violence9.png",
+        "exampleWord": "ISIS",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }, 
+    {
+      "id": "6",
+      "name": "暴恐人物",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 6001,
+        "isSelect": true,
+        "name": "恐暴人物",
+        "imageUrl": "/examinePic/violence10.png",
+        "exampleWord": "本拉登 人皮面具",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }, 
+    {
+      "id": "7",
+      "name": "暴力事件",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 7001,
+        "isSelect": true,
+        "name": "血腥",
+        "imageUrl": "/examinePic/violence1.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, 
+      {
+        "id": 7002,
+        "isSelect": true,
+        "name": "尸体",
+        "imageUrl": "/examinePic/violence2.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 7003,
+        "isSelect": true,
+        "name": "绑架及杀人",
+        "imageUrl": "/examinePic/violence3.png",
+        "exampleWord": "买凶杀人",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 7004,
+        "isSelect": true,
+        "name": "爆炸火灾",
+        "imageUrl": "/examinePic/violence4.png",
+        "exampleWord": "嫡炸药配置 炸弹闹钟",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 7005,
+        "isSelect": true,
+        "name": "暴乱",
+        "imageUrl": "/examinePic/violence5.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 7006,
+        "isSelect": true,
+        "name": "军事武器",
+        "imageUrl": "/examinePic/violence6.png",
+        "exampleWord": "kj900洛克 大马士革军刀",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 7007,
+        "isSelect": true,
+        "name": "警察部队",
+        "imageUrl": "/examinePic/violence7.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 7008,
+        "isSelect": true,
+        "name": "车祸",
+        "imageUrl": "/examinePic/violence8.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }
+  ],
+  "涉政": [
+    {
+      "id": "8",
+      "name": "涉政人物",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 8001,
+        "isSelect": true,
+        "name": "涉政正面人物",
+        "imageUrl": "/examinePic/politics1.png",
+        "exampleWord": "习近平",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 8002,
+        "isSelect": true,
+        "name": "涉政负面人物",
+        "imageUrl": "/examinePic/politics2.png",
+        "exampleWord": "薄熙来",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 8003,
+        "isSelect": true,
+        "name": "劣迹艺人",
+        "imageUrl": "/examinePic/politics3.png",
+        "exampleWord": "柯震东",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    },
+    {
+      "id": "9",
+      "name": "涉政事件",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 9001,
+        "isSelect": true,
+        "name": "涉政正面事件",
+        "imageUrl": "/examinePic/politics4.png",
+        "exampleWord": "十九大",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 9002,
+        "isSelect": true,
+        "name": "涉政负面事件",
+        "exampleWord": "六四事件",
+        "imageUrl": "",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }, 
+    {
+      "id": "10",
+      "name": "涉政组织",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 10001,
+        "isSelect": true,
+        "name": "涉政正面组织",
+        "imageUrl": "/examinePic/politics5.png",
+        "exampleWord": "共产党",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 10002,
+        "isSelect": true,
+        "name": "涉政负面组织",
+        "imageUrl": "/examinePic/politics6.png",
+        "exampleWord": "法轮功 菩提功",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }, 
+    {
+      "id": "11",
+      "name": "政治敏感",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 11001,
+        "isSelect": true,
+        "name": "中国地图",
+        "imageUrl": "/examinePic/politics7.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }
+  ],
+  "违禁": [
+    {
+      "id": "12",
+      "name": "赌博",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 12001,
+        "isSelect": true,
+        "name": "赌博",
+        "imageUrl": "/examinePic/inlegal1.png",
+        "exampleWord": "葡京娱乐城 皇冠新2网",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    },
+    {
+      "id": "13",
+      "name": "假冒伪劣及造假盗窃",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 13002,
+        "isSelect": true,
+        "name": "假冒伪劣及造假盗窃",
+        "imageUrl": "/examinePic/inlegal2.png",
+        "exampleWord": "二代身份证生成器 假币",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }, 
+    {
+      "id": "18",
+      "name": "辱骂",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 18001,
+        "isSelect": true,
+        "name": "辱骂",
+        "imageUrl": "/examinePic/inlegal1.png",
+        "exampleWord": "葡京娱乐城 皇冠新2网",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    },
+    {
+      "id": "14",
+      "name": "假冒伪劣及造假盗窃",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 14002,
+        "isSelect": true,
+        "name": "非法交易",
+        "imageUrl": "/examinePic/inlegal3.png",
+        "exampleWord": "专业删帖机构 罂粟碱",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }, 
+    {
+      "id": "15",
+      "name": "非法获取私人信息",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 15002,
+        "isSelect": true,
+        "name": "非法获取私人信息",
+        "imageUrl": "/examinePic/inlegal4.png",
+        "exampleWord": "特洛伊卧底软件 猎鹰手机监听",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }
+  ],
+  "广告": [
+    {
+      "id": "16",
+      "name": "品牌标识",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 16001,
+        "isSelect": true,
+        "name": "品牌标识",
+        "imageUrl": "/examinePic/adv1.png",
+        "exampleWord": "可口可乐",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    },
+    {
+      "id": "17",
+      "name": "欺诈及营销广告",
+      "isDefault": true,
+      "confirmThreshold": 99,
+      "suspectedThreshold": 75.5,
+      "children": [{
+        "id": 17002,
+        "isSelect": true,
+        "name": "软文推广（QQ 微信）",
+        "exampleWord": "微信请加：2222222",
+        "imageUrl": "",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 17003,
+        "isSelect": true,
+        "name": "水印",
+        "imageUrl": "/examinePic/adv3.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 17004,
+        "isSelect": true,
+        "name": "二维码",
+        "imageUrl": "/examinePic/adv2.png",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 17005,
+        "isSelect": true,
+        "name": "联系方式（手机/座机）",
+        "imageUrl": "/examinePic/adv4.png",
+        "exampleWord": "222222123-2313",
+        "isConfirm": true,
+        "isSuspected": true
+      }, {
+        "id": 17006,
+        "isSelect": true,
+        "name": "网址",
+        "imageUrl": "/examinePic/adv5.png",
+        "exampleWord": "www.cxk.com",
+        "isConfirm": true,
+        "isSuspected": true
+      }]
+    }
+  ]
+}
