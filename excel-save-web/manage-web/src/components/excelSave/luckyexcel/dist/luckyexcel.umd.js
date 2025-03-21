@@ -15,7 +15,7 @@ for (var i = 0, len = code.length; i < len; ++i) {
   revLookup[code.charCodeAt(i)] = i
 }
 
-// Support decoding URL-safe base64 strings, as Node.js does.
+// Support decoding URL-safe base64 strings, as Node does.
 // See: https://en.wikipedia.org/wiki/Base64#URL_applications
 revLookup['-'.charCodeAt(0)] = 62
 revLookup['_'.charCodeAt(0)] = 63
@@ -157,7 +157,7 @@ function fromByteArray (uint8) {
 },{}],3:[function(require,module,exports){
 (function (Buffer){
 /*!
- * The buffer module from node.js, for the browser.
+ * The buffer module from node, for the browser.
  *
  * @author   Feross Aboukhadijeh <https://feross.org>
  * @license  MIT
@@ -2045,8 +2045,8 @@ function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
 
-}).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":9}],5:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../is-buffer/index")})
+},{"../../is-buffer/index":9}],5:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -2732,7 +2732,7 @@ function immediate(task) {
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],8:[function(require,module,exports){
 if (typeof Object.create === 'function') {
-  // implementation from standard node.js 'util' module
+  // implementation from standard node 'util' module
   module.exports = function inherits(ctor, superCtor) {
     if (superCtor) {
       ctor.super_ = superCtor
@@ -2912,7 +2912,7 @@ var DataLengthProbe = require('./stream/DataLengthProbe');
  * @param {number} compressedSize the size of the data compressed.
  * @param {number} uncompressedSize the size of the data after decompression.
  * @param {number} crc32 the crc32 of the decompressed file.
- * @param {object} compression the type of compression, see lib/compressions.js.
+ * @param {object} compression the type of compression, see lib/compressions.
  * @param {String|ArrayBuffer|Uint8Array|Buffer} data the compressed data.
  */
 function CompressedObject(compressedSize, uncompressedSize, crc32, compression, data) {
@@ -2996,7 +2996,7 @@ exports.DEFLATE = require('./flate');
 var utils = require('./utils');
 
 /**
- * The following functions come from pako, from pako/lib/zlib/crc32.js
+ * The following functions come from pako, from pako/lib/zlib/crc32
  * released under the MIT license, see pako https://github.com/nodeca/pako/
  */
 
@@ -3088,7 +3088,7 @@ exports.dosPermissions = null;
 
 // load the global object first:
 // - it should be better integrated in the system (unhandledRejection in node)
-// - the environment may have a custom Promise implementation (see zone.js)
+// - the environment may have a custom Promise implementation (see zone)
 var ES6Promise = null;
 if (typeof Promise !== "undefined") {
     ES6Promise = Promise;
@@ -3835,7 +3835,7 @@ JSZip.support = require('./support');
 JSZip.defaults = require('./defaults');
 
 // TODO find a better way to handle this version,
-// a require('package.json').version doesn't work with webpack, see #327
+// a require('packageon').version doesn't work with webpack, see #327
 JSZip.version = "3.5.0";
 
 JSZip.loadAsync = function (content, options) {
@@ -3951,7 +3951,7 @@ module.exports = {
             return Buffer.from(data, encoding);
         } else {
             if (typeof data === "number") {
-                // Safeguard for old Node.js versions. On newer versions,
+                // Safeguard for old Node versions. On newer versions,
                 // Buffer.from(number) / Buffer(number, encoding) already throw.
                 throw new Error("The \"data\" argument must not be a number");
             }
@@ -10545,7 +10545,7 @@ module.exports = GZheader;
 //   misrepresented as being the original software.
 // 3. This notice may not be removed or altered from any source distribution.
 
-// See state defs from inflate.js
+// See state defs from inflate
 var BAD = 30;       /* got a data error -- remain here until reset */
 var TYPE = 12;      /* i: waiting for type bits, including last-flag bit */
 
@@ -14316,9 +14316,9 @@ process.chdir = function (dir) {
 process.umask = function() { return 0; };
 
 },{}],65:[function(require,module,exports){
-module.exports = require('./lib/_stream_duplex.js');
+module.exports = require('./lib/_stream_duplex');
 
-},{"./lib/_stream_duplex.js":66}],66:[function(require,module,exports){
+},{"./lib/_stream_duplex":66}],66:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -14595,7 +14595,7 @@ function prependListener(emitter, event, fn) {
 
   // This is a hack to make sure that our error handler is attached before any
   // userland ones.  NEVER DO THIS. This is here only because this code needs
-  // to continue to work with older versions of Node.js that do not include
+  // to continue to work with older versions of Node that do not include
   // the prependListener() method. The goal is to eventually remove this hack.
   if (!emitter._events || !emitter._events[event]) emitter.on(event, fn);else if (isArray(emitter._events[event])) emitter._events[event].unshift(fn);else emitter._events[event] = [fn, emitter._events[event]];
 }
@@ -15994,7 +15994,7 @@ function Writable(options) {
   // would return false, as no `_writableState` property is attached.
 
   // Trying to use the custom `instanceof` for Writable here will also break the
-  // Node.js LazyTransform implementation, which has a non-trivial getter for
+  // Node LazyTransform implementation, which has a non-trivial getter for
   // `_writableState` that would lead to infinite recursion.
   if (!realHasInstance.call(Writable, this) && !(this instanceof Duplex)) {
     return new Writable(options);
@@ -16587,21 +16587,21 @@ module.exports = require('events').EventEmitter;
 module.exports = require('./readable').PassThrough
 
 },{"./readable":75}],75:[function(require,module,exports){
-exports = module.exports = require('./lib/_stream_readable.js');
+exports = module.exports = require('./lib/_stream_readable');
 exports.Stream = exports;
 exports.Readable = exports;
-exports.Writable = require('./lib/_stream_writable.js');
-exports.Duplex = require('./lib/_stream_duplex.js');
-exports.Transform = require('./lib/_stream_transform.js');
-exports.PassThrough = require('./lib/_stream_passthrough.js');
+exports.Writable = require('./lib/_stream_writable');
+exports.Duplex = require('./lib/_stream_duplex');
+exports.Transform = require('./lib/_stream_transform');
+exports.PassThrough = require('./lib/_stream_passthrough');
 
-},{"./lib/_stream_duplex.js":66,"./lib/_stream_passthrough.js":67,"./lib/_stream_readable.js":68,"./lib/_stream_transform.js":69,"./lib/_stream_writable.js":70}],76:[function(require,module,exports){
+},{"./lib/_stream_duplex":66,"./lib/_stream_passthrough":67,"./lib/_stream_readable":68,"./lib/_stream_transform":69,"./lib/_stream_writable":70}],76:[function(require,module,exports){
 module.exports = require('./readable').Transform
 
 },{"./readable":75}],77:[function(require,module,exports){
-module.exports = require('./lib/_stream_writable.js');
+module.exports = require('./lib/_stream_writable');
 
-},{"./lib/_stream_writable.js":70}],78:[function(require,module,exports){
+},{"./lib/_stream_writable":70}],78:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -16704,11 +16704,11 @@ var EE = require('events').EventEmitter;
 var inherits = require('inherits');
 
 inherits(Stream, EE);
-Stream.Readable = require('readable-stream/readable.js');
-Stream.Writable = require('readable-stream/writable.js');
-Stream.Duplex = require('readable-stream/duplex.js');
-Stream.Transform = require('readable-stream/transform.js');
-Stream.PassThrough = require('readable-stream/passthrough.js');
+Stream.Readable = require('readable-stream/readable');
+Stream.Writable = require('readable-stream/writable');
+Stream.Duplex = require('readable-stream/duplex');
+Stream.Transform = require('readable-stream/transform');
+Stream.PassThrough = require('readable-stream/passthrough');
 
 // Backwards-compat with node 0.4.x
 Stream.Stream = Stream;
@@ -16805,7 +16805,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":5,"inherits":8,"readable-stream/duplex.js":65,"readable-stream/passthrough.js":74,"readable-stream/readable.js":75,"readable-stream/transform.js":76,"readable-stream/writable.js":77}],81:[function(require,module,exports){
+},{"events":5,"inherits":8,"readable-stream/duplex":65,"readable-stream/passthrough":74,"readable-stream/readable":75,"readable-stream/transform":76,"readable-stream/writable":77}],81:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -17104,7 +17104,7 @@ function simpleEnd(buf) {
 }
 },{"safe-buffer":78}],82:[function(require,module,exports){
 (function (setImmediate,clearImmediate){
-var nextTick = require('process/browser.js').nextTick;
+var nextTick = require('process/browser').nextTick;
 var apply = Function.prototype.apply;
 var slice = Array.prototype.slice;
 var immediateIds = {};
@@ -17153,7 +17153,7 @@ exports._unrefActive = exports.active = function(item) {
   }
 };
 
-// That's not how node.js implements it but the exposed api is the same.
+// That's not how node implements it but the exposed api is the same.
 exports.setImmediate = typeof setImmediate === "function" ? setImmediate : function(fn) {
   var id = nextImmediateId++;
   var args = arguments.length < 2 ? false : slice.call(arguments, 1);
@@ -17181,7 +17181,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-},{"process/browser.js":64,"timers":82}],83:[function(require,module,exports){
+},{"process/browser":64,"timers":82}],83:[function(require,module,exports){
 (function (global){
 
 /**

@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="head">
-            <div class="header_title">巨佳</div>
+            <div class="header_title">lang</div>
         </div>
     </div>
 </template>

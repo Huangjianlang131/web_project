@@ -18,7 +18,7 @@
 
 <script>
 import { exportExcel, getExcelFile, processCellData } from './components/exports.js'
-import LuckyExcel from '@/components/luckyexcel'
+import LuckyExcel from './luckyexcel'
 import { base_url } from '../../../env/dev'
 import * as XLSX from 'xlsx';
 
